@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>The Art Cart by Malu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -19,15 +21,15 @@
     /* HEADER */
     header {
       background: #ff4f7b;
-      color: white;
-      padding: 50px 20px;
+      color: #fff;
       text-align: center;
+      padding: 55px 20px;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 38px;
-      margin-bottom: 10px;
+      margin: 0 0 8px;
     }
 
     header p {
@@ -35,7 +37,7 @@
       opacity: 0.95;
     }
 
-    /* SECTION COMMON */
+    /* COMMON */
     section {
       padding: 70px 20px;
     }
@@ -47,18 +49,27 @@
       margin-bottom: 40px;
     }
 
+    /* NOTICE */
+    .notice {
+      background: #ffe1ea;
+      text-align: center;
+      padding: 14px;
+      font-size: 14px;
+      color: #c2185b;
+    }
+
     /* PRODUCTS */
     .products {
+      max-width: 1200px;
+      margin: auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 25px;
-      max-width: 1200px;
-      margin: auto;
     }
 
     .card {
-      background: white;
-      border-radius: 16px;
+      background: #fff;
+      border-radius: 18px;
       padding: 18px;
       text-align: center;
       box-shadow: 0 10px 25px rgba(0,0,0,0.06);
@@ -68,7 +79,7 @@
       width: 100%;
       height: 220px;
       object-fit: cover;
-      border-radius: 12px;
+      border-radius: 14px;
     }
 
     .card h4 {
@@ -79,6 +90,7 @@
     .card p {
       font-size: 14px;
       color: #777;
+      margin: 0;
     }
 
     .btn {
@@ -86,18 +98,18 @@
       margin-top: 12px;
       padding: 10px 18px;
       background: #ff4f7b;
-      color: white;
+      color: #fff;
       text-decoration: none;
-      border-radius: 20px;
+      border-radius: 22px;
       font-size: 14px;
     }
 
     /* MEET THE MAKER */
     .maker-box {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
-      background: white;
-      border-radius: 22px;
+      background: #fff;
+      border-radius: 24px;
       padding: 45px 30px;
       text-align: center;
       box-shadow: 0 15px 35px rgba(0,0,0,0.06);
@@ -109,19 +121,19 @@
       border-radius: 18px;
       background: #ffe1ea;
       padding: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .maker-box h3 {
       font-family: 'Playfair Display', serif;
       font-size: 24px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .maker-box p {
       font-size: 15px;
       line-height: 1.8;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
     /* FOOTER */
@@ -137,120 +149,72 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>The Art Cart by Malu</h1>
-    <p>Customized Gifts Made with Love 💖</p>
-  </header>
+<header>
+  <h1>The Art Cart by Malu</h1>
+  <p>Customized Gifts Made with Love 💖</p>
+</header>
 
-  <!-- PRODUCTS -->
-  <section>
-    <h2>Our Products</h2>
+<div class="notice">
+  ✨ All products are fully customizable — designed as per your preference ✨
+</div>
 
-    <div class="products">
+<section>
+  <h2>Our Products</h2>
 
-      <div class="card">
-        <img src="birthday1.jpg" alt="Birthday Hamper">
-        <h4>Birthday Hamper</h4>
-        <p>Customization Available</p>
-        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
-      </div>
+  <div class="products">
+    <div class="card"><img src="birthday1.jpg"><h4>Birthday Hamper</h4><p>Customization Available</p><a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a></div>
+    <div class="card"><img src="birthday2.jpg"><h4>Premium Birthday Hamper</h4><p>Customization Available</p><a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a></div>
+    <div class="card"><img src="valentine1.jpg"><h4>Valentine Hamper</h4><p>Customization Available</p><a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a></div>
+    <div class="card"><img src="valentine2.jpg"><h4>Special Valentine Combo</h4><p>Customization Available</p><a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a></div>
+    <div class="card"><img src="anniversary.jpg"><h4>Anniversary Hamper</h4><p>Customization Available</p><a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a></div>
+    <div class="card"><img src="engagement.jpg"><h4>Engagement Hamper</h4><p>Customization Available</p><a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a></div>
+    <div class="card"><img src="bouquet.jpg"><h4>Bouquet</h4><p>Customization Available</p><a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a></div>
+    <div class="card"><img src="chocolate.jpg"><h4>Chocolate Hamper</h4><p>Customization Available</p><a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a></div>
+  </div>
+</section>
 
-      <div class="card">
-        <img src="birthday2.jpg" alt="Premium Birthday Hamper">
-        <h4>Premium Birthday Hamper</h4>
-        <p>Customization Available</p>
-        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
-      </div>
+<section>
+  <h2>Meet the Maker 🌸</h2>
 
-      <div class="card">
-        <img src="valentine1.jpg" alt="Valentine Hamper">
-        <h4>Valentine Hamper</h4>
-        <p>Customization Available</p>
-        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <img src="valentine2.jpg" alt="Special Valentine Combo">
-        <h4>Special Valentine Combo</h4>
-        <p>Customization Available</p>
-        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <img src="anniversary.jpg" alt="Anniversary Hamper">
-        <h4>Anniversary Hamper</h4>
-        <p>Customization Available</p>
-        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <img src="engagement.jpg" alt="Engagement Hamper">
-        <h4>Engagement Hamper</h4>
-        <p>Customization Available</p>
-        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <img src="bouquet.jpg" alt="Bouquet">
-        <h4>Bouquet</h4>
-        <p>Customization Available</p>
-        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <img src="chocolate.jpg" alt="Chocolate Hamper">
-        <h4>Chocolate Hamper</h4>
-        <p>Customization Available</p>
-        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
-      </div>
-
+  <div class="maker-box">
+    <div class="maker-photo">
+      <img src="malu.jpg" alt="Amrutha Mohan">
     </div>
-  </section>
 
-  <!-- MEET THE MAKER -->
-  <section>
-    <h2>Meet the Maker 🌸</h2>
+    <h3>Amrutha Mohan (Malu)</h3>
+    <p><strong>Creator of The Art Cart by Malu 💕</strong></p>
 
-    <div class="maker-box">
-      <div class="maker-photo">
-        <img src="malu.jpg" alt="Amrutha Mohan">
-      </div>
+    <p>
+      I hold a BTech degree in Computer Science & Engineering and began my professional journey
+      as a Software Tester. Currently, I work in an engineering company near Chalakudy.
+    </p>
 
-      <h3>Amrutha Mohan (Malu)</h3>
-      <p><strong>Creator of The Art Cart by Malu 💕</strong></p>
+    <p><strong>Why I started this:</strong></p>
 
-      <p>
-        I hold a BTech degree in Computer Science & Engineering and began my professional journey
-        as a Software Tester. Currently, I work in an engineering company near Chalakudy.
-      </p>
+    <p>
+      I never planned to start this as a business. In May 2023, I designed a baby details photo
+      frame for my own child purely out of love and happiness. I shared it on my WhatsApp status,
+      and to my surprise, friends began asking me to create similar frames.
+    </p>
 
-      <p><strong>Why I started this:</strong></p>
+    <p>
+      I initially said no, but their encouragement made me realize that this small moment of
+      happiness could mean something special to others. I started with photo frames and
+      polaroids, and over time, as trends changed, my creativity naturally evolved into
+      customized gift hampers for all occasions.
+    </p>
 
-      <p>
-        I never planned to start this as a business. In May 2023, I designed a baby details photo
-        frame for my own child purely out of love and happiness. I shared it on my WhatsApp status,
-        and friends began asking me to create similar frames.
-      </p>
+    <p>
+      📍 Based in Chalakudy, Thrissur, Kerala<br>
+      🏠 Home-based creative setup<br>
+      💻 Online only — No physical shop
+    </p>
+  </div>
+</section>
 
-      <p>
-        I initially said no, but their encouragement made me realize this happiness could be shared.
-        What started with photo frames and polaroids naturally evolved into customized gift hampers
-        for all occasions.
-      </p>
-
-      <p>
-        📍 Based in Chalakudy, Thrissur, Kerala<br>
-        🏠 Home-based creative setup<br>
-        💻 Online only — No physical shop
-      </p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2026 The Art Cart by Malu · All rights reserved
-  </footer>
+<footer>
+  © 2026 The Art Cart by Malu · All rights reserved
+</footer>
 
 </body>
 </html>
