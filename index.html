@@ -19,10 +19,6 @@
             padding: 30px 20px;
         }
 
-        header h1 {
-            margin: 0;
-        }
-
         .tagline {
             margin-top: 8px;
             font-size: 14px;
@@ -93,6 +89,35 @@
             font-size: 14px;
         }
 
+        /* Meet the Maker */
+        .maker-section {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .maker-card {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .maker-card img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .maker-text {
+            text-align: left;
+            flex: 1;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -111,6 +136,13 @@
                 flex-direction: column;
                 align-items: center;
             }
+            .maker-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .maker-text {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -126,6 +158,13 @@
     ✨ All Products Are Fully Customizable – Designed As Per Your Preference ✨
 </div>
 
+<div class="custom-banner">
+    🎉 Birthday | 💖 Valentine | 💍 Anniversary | 🎊 Engagement  
+    <br>
+    Custom Hampers for Every Special Moment
+</div>
+
+<!-- PRODUCTS -->
 <div class="section">
     <h2>Our Products</h2>
 
@@ -137,106 +176,167 @@
     <div class="products">
 
         <div class="product-box">
-            <img src="birthday1.jpg" alt="Birthday Hamper">
+            <img src="birthday1.jpg">
             <div class="product-content">
                 <h3>🎂 Birthday Hamper</h3>
                 <p class="custom-text">Customization Available</p>
-                <a class="button"
-                   href="https://wa.me/919745375597?text=Hi%20I%20would%20like%20to%20know%20the%20price%20and%20customization%20details%20for%20the%20Birthday%20Hamper">
-                   Order on WhatsApp
-                </a>
+                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
         </div>
 
         <div class="product-box">
-            <img src="birthday2.jpg" alt="Premium Birthday Hamper">
+            <img src="birthday2.jpg">
             <div class="product-content">
                 <h3>🎉 Premium Birthday Hamper</h3>
                 <p class="custom-text">Customization Available</p>
-                <a class="button"
-                   href="https://wa.me/919745375597?text=Hi%20I%20would%20like%20to%20know%20the%20price%20and%20customization%20details%20for%20the%20Premium%20Birthday%20Hamper">
-                   Order on WhatsApp
-                </a>
+                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
         </div>
 
         <div class="product-box">
-            <img src="valentine1.jpg" alt="Valentine Hamper">
+            <img src="valentine1.jpg">
             <div class="product-content">
                 <h3>❤️ Valentine Hamper</h3>
                 <p class="custom-text">Customization Available</p>
-                <a class="button"
-                   href="https://wa.me/919745375597?text=Hi%20I%20would%20like%20to%20know%20the%20price%20and%20customization%20details%20for%20the%20Valentine%20Hamper">
-                   Order on WhatsApp
-                </a>
+                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
         </div>
 
         <div class="product-box">
-            <img src="valentine2.jpg" alt="Special Valentine Combo">
+            <img src="valentine2.jpg">
             <div class="product-content">
                 <h3>💘 Special Valentine Combo</h3>
                 <p class="custom-text">Customization Available</p>
-                <a class="button"
-                   href="https://wa.me/919745375597?text=Hi%20I%20would%20like%20to%20know%20the%20price%20and%20customization%20details%20for%20the%20Special%20Valentine%20Combo">
-                   Order on WhatsApp
-                </a>
+                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
         </div>
 
         <div class="product-box">
-            <img src="anniversary.jpg" alt="Anniversary Hamper">
+            <img src="anniversary.jpg">
             <div class="product-content">
                 <h3>💍 Anniversary Hamper</h3>
                 <p class="custom-text">Customization Available</p>
-                <a class="button"
-                   href="https://wa.me/919745375597?text=Hi%20I%20would%20like%20to%20know%20the%20price%20and%20customization%20details%20for%20the%20Anniversary%20Hamper">
-                   Order on WhatsApp
-                </a>
+                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
         </div>
 
         <div class="product-box">
-            <img src="engagement.jpg" alt="Engagement Hamper">
+            <img src="engagement.jpg">
             <div class="product-content">
                 <h3>💖 Engagement Hamper</h3>
                 <p class="custom-text">Customization Available</p>
-                <a class="button"
-                   href="https://wa.me/919745375597?text=Hi%20I%20would%20like%20to%20know%20the%20price%20and%20customization%20details%20for%20the%20Engagement%20Hamper">
-                   Order on WhatsApp
-                </a>
+                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
         </div>
 
         <div class="product-box">
-            <img src="bouquet.jpg" alt="Bouquet">
+            <img src="bouquet.jpg">
             <div class="product-content">
                 <h3>🌸 Bouquet</h3>
                 <p class="custom-text">Customization Available</p>
-                <a class="button"
-                   href="https://wa.me/919745375597?text=Hi%20I%20would%20like%20to%20know%20the%20price%20and%20customization%20details%20for%20the%20Bouquet">
-                   Order on WhatsApp
-                </a>
+                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
         </div>
 
         <div class="product-box">
-            <img src="chocolate.jpg" alt="Chocolate Hamper">
+            <img src="chocolate.jpg">
             <div class="product-content">
                 <h3>🍫 Chocolate Hamper</h3>
                 <p class="custom-text">Customization Available</p>
-                <a class="button"
-                   href="https://wa.me/919745375597?text=Hi%20I%20would%20like%20to%20know%20the%20price%20and%20customization%20details%20for%20the%20Chocolate%20Hamper">
-                   Order on WhatsApp
-                </a>
+                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
         </div>
 
     </div>
 </div>
 
+<!-- MEET THE MAKER -->
+<div class="section maker-section">
+    <h2>Meet the Maker 🌸</h2>
+
+    <div class="maker-card">
+        <img src="malu.jpg" alt="Malu - The Art Cart by Malu">
+
+        <div class="maker-text">
+            <p>
+                Hi, I’m <strong>Malu</strong> — the creator behind
+                <strong>The Art Cart by Malu</strong> 💖
+            </p>
+
+            <p>
+                I hold a <strong>BTech degree in Computer Science & Engineering</strong>
+                and began my professional journey working as a
+                <strong>Software Tester</strong>.
+            </p>
+
+            <p>
+                Currently, I am working in an <strong>engineering company near Chalakudy</strong>.
+                Alongside my career, I’ve always had a deep passion for creativity,
+                design, and thoughtful gifting.
+            </p>
+
+            <p>
+                <strong>Why I started this:</strong><br><br>
+                I never planned to start this as a business. In May 2023, I designed a
+                baby details photo frame for my own child — purely out of love and happiness.
+                I shared it on my WhatsApp status, and to my surprise, friends started asking
+                me to make similar frames for them.
+            </p>
+
+            <p>
+                I kept saying no at first, but their encouragement made me realize that
+                this small moment of happiness could mean something to others as well.
+                I started by creating only photo frames and polaroids.
+            </p>
+
+            <p>
+                Over time, trends changed, creativity evolved, and my work naturally grew
+                into customized gift hampers for all occasions — shaping what
+                <strong>The Art Cart by Malu</strong> is today.
+            </p>
+
+            <p>
+                📍 <strong>Based in Chalakudy, Thrissur, Kerala</strong><br>
+                🏠 Home-based creative setup<br>
+                🛍️ <strong>Online only</strong> – No physical shop
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="section">
+    <h2>Customer Love 💕</h2>
+
+    <div class="products">
+        <div class="product-box">
+            <div class="product-content">
+                ⭐⭐⭐⭐⭐
+                <p>“Beautifully customized and delivered on time.”</p>
+                <strong>– Anjali</strong>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <div class="product-content">
+                ⭐⭐⭐⭐⭐
+                <p>“Exactly what I wanted. Great communication!”</p>
+                <strong>– Rahul</strong>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <div class="product-content">
+                ⭐⭐⭐⭐⭐
+                <p>“Highly recommended for customized gifts.”</p>
+                <strong>– Sneha</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer>
-    <p>📍 Chalakudy, Kerala</p>
+    <p>📍 Chalakudy, Thrissur, Kerala</p>
     <p>📞 WhatsApp: +91 97453 75597</p>
     <p>
         Follow us on Instagram:
@@ -248,3 +348,4 @@
 
 </body>
 </html>
+
