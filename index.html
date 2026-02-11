@@ -5,18 +5,28 @@
     <title>The Art Cart by Malu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #fff5f8;
-            text-align: center;
+            color: #333;
         }
 
         header {
             background-color: #ff4d6d;
             color: white;
-            padding: 30px 20px;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
         }
 
         .tagline {
@@ -27,18 +37,20 @@
         .custom-banner {
             background-color: #ffe3ec;
             padding: 12px;
-            font-weight: bold;
-            color: #d6336c;
+            font-weight: 500;
+            color: #c9184a;
+            text-align: center;
         }
 
         .section {
-            padding: 40px 20px;
+            padding: 50px 20px;
+            text-align: center;
         }
 
         .note {
             font-size: 14px;
-            color: #555;
-            margin-bottom: 25px;
+            color: #666;
+            margin-bottom: 30px;
         }
 
         .products {
@@ -51,14 +63,14 @@
         .product-box {
             background: white;
             width: 260px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
             overflow: hidden;
             transition: transform 0.3s;
         }
 
         .product-box:hover {
-            transform: scale(1.05);
+            transform: translateY(-6px);
         }
 
         .product-box img {
@@ -68,7 +80,7 @@
         }
 
         .product-content {
-            padding: 15px;
+            padding: 16px;
         }
 
         .custom-text {
@@ -79,75 +91,69 @@
 
         .button {
             display: inline-block;
-            padding: 8px 18px;
+            padding: 8px 20px;
             margin-top: 10px;
             background-color: #ff4d6d;
             color: white;
             text-decoration: none;
-            border-radius: 20px;
-            font-weight: bold;
+            border-radius: 25px;
+            font-weight: 500;
             font-size: 14px;
         }
 
         /* Meet the Maker */
         .maker-section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
 
         .maker-card {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 30px;
             background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 45px 35px;
+            border-radius: 22px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
-       .maker-card img {
+        .maker-card img {
             width: 220px;
             height: 220px;
             border-radius: 50%;
-            object-fit: contain;
-            background-color: #f8cbd5;
-            padding: 8px;
+            object-fit: cover;
+            margin-bottom: 25px;
         }
 
-        }
-
-        }
-
-        .maker-text {
-            text-align: left;
-            flex: 1;
+        .maker-text p {
+            font-size: 15.5px;
+            line-height: 1.9;
+            margin-bottom: 14px;
         }
 
         footer {
-            background-color: #333;
+            background-color: #2f2f2f;
             color: white;
-            padding: 25px 15px;
-            margin-top: 40px;
+            padding: 30px 15px;
+            text-align: center;
         }
 
         footer a {
             color: #ff4d6d;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
         }
 
         @media (max-width: 600px) {
-            .products {
-                flex-direction: column;
-                align-items: center;
+            .product-box {
+                width: 90%;
             }
+
             .maker-card {
-                flex-direction: column;
-                text-align: center;
+                padding: 30px 20px;
             }
-            .maker-text {
-                text-align: center;
+
+            .maker-card img {
+                width: 190px;
+                height: 190px;
             }
         }
     </style>
@@ -165,9 +171,7 @@
 </div>
 
 <div class="custom-banner">
-    🎉 Birthday | 💖 Valentine | 💍 Anniversary | 🎊 Engagement  
-    <br>
-    Custom Hampers for Every Special Moment
+    🎉 Birthday | 💖 Valentine | 💍 Anniversary | 🎊 Engagement – Custom Hampers for Every Moment
 </div>
 
 <!-- PRODUCTS -->
@@ -175,8 +179,8 @@
     <h2>Our Products</h2>
 
     <p class="note">
-        💡 Prices vary based on size, items included & customization.<br>
-        Please contact us on WhatsApp for exact pricing and details.
+        Prices vary based on size, items & customization.<br>
+        Please contact us on WhatsApp for exact details.
     </p>
 
     <div class="products">
@@ -209,45 +213,9 @@
         </div>
 
         <div class="product-box">
-            <img src="valentine2.jpg">
-            <div class="product-content">
-                <h3>💘 Special Valentine Combo</h3>
-                <p class="custom-text">Customization Available</p>
-                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
-            </div>
-        </div>
-
-        <div class="product-box">
             <img src="anniversary.jpg">
             <div class="product-content">
                 <h3>💍 Anniversary Hamper</h3>
-                <p class="custom-text">Customization Available</p>
-                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
-            </div>
-        </div>
-
-        <div class="product-box">
-            <img src="engagement.jpg">
-            <div class="product-content">
-                <h3>💖 Engagement Hamper</h3>
-                <p class="custom-text">Customization Available</p>
-                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
-            </div>
-        </div>
-
-        <div class="product-box">
-            <img src="bouquet.jpg">
-            <div class="product-content">
-                <h3>🌸 Bouquet</h3>
-                <p class="custom-text">Customization Available</p>
-                <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
-            </div>
-        </div>
-
-        <div class="product-box">
-            <img src="chocolate.jpg">
-            <div class="product-content">
-                <h3>🍫 Chocolate Hamper</h3>
                 <p class="custom-text">Customization Available</p>
                 <a class="button" href="https://wa.me/919745375597">Order on WhatsApp</a>
             </div>
@@ -263,76 +231,44 @@
     <div class="maker-card">
         <img src="malu.jpg" alt="Amrutha Mohan (Malu)">
 
-        <div class="maker-text">
-            <p>
-                Hi, I’m <strong>Amrutha Mohan</strong>, lovingly known as <strong>Malu</strong> —
-                the creator behind <strong>The Art Cart by Malu</strong> 💖
+        <h3>
+            Amrutha Mohan <span style="font-weight:400;">(Malu)</span>
+        </h3>
 
-            </p>
+        <p>
+            Creator of <strong>The Art Cart by Malu</strong> 💖
+        </p>
 
-            <p>
-                I hold a <strong>BTech degree in Computer Science & Engineering</strong>
-                and began my professional journey as a <strong>Software Tester</strong>.
-                Currently, I work in an <strong>engineering company near Chalakudy</strong>.
-            </p>
+        <p>
+            I hold a <strong>BTech degree in Computer Science & Engineering</strong> and began my
+            professional journey as a <strong>Software Tester</strong>.
+            Currently, I work in an <strong>engineering company near Chalakudy</strong>.
+        </p>
 
-            <p>
-                <strong>Why I started this:</strong><br><br>
-                I never planned to start this as a business. In May 2023, I designed a
-                baby details photo frame for my own child purely out of love and happiness.
-                I shared it on my WhatsApp status, and to my surprise, friends started
-                asking me to make similar frames for them.
-            </p>
+        <p><strong>Why I started this:</strong></p>
 
-            <p>
-                I kept saying no at first, but their encouragement made me realize that
-                this small moment of happiness could mean something special to others.
-                I started by creating only photo frames and polaroids.
-            </p>
+        <p>
+            I never planned to start this as a business. In May 2023, I designed a baby details
+            photo frame for my own child purely out of love and happiness.
+            I shared it on my WhatsApp status, and friends began asking me to create similar frames.
+        </p>
 
-            <p>
-                As trends changed and creativity evolved, my work naturally grew into
-                customized gift hampers for all occasions — shaping what
-                <strong>The Art Cart by Malu</strong> is today.
-            </p>
+        <p>
+            Though I said no at first, their encouragement made me realize this small moment of
+            happiness could mean something special to others.
+            I started with photo frames and polaroids.
+        </p>
 
-            <p>
-                📍 <strong>Based in Chalakudy, Thrissur, Kerala</strong><br>
-                🏠 Home-based creative setup<br>
-                🛍️ <strong>Online only</strong> – No physical shop
-            </p>
-        </div>
-    </div>
-</div>
+        <p>
+            As trends evolved, my creativity grew into customized gift hampers for all occasions —
+            shaping what <strong>The Art Cart by Malu</strong> is today.
+        </p>
 
-<!-- REVIEWS -->
-<div class="section">
-    <h2>Customer Love 💕</h2>
-
-    <div class="products">
-        <div class="product-box">
-            <div class="product-content">
-                ⭐⭐⭐⭐⭐
-                <p>“Beautifully customized and delivered on time.”</p>
-                <strong>– Anjali</strong>
-            </div>
-        </div>
-
-        <div class="product-box">
-            <div class="product-content">
-                ⭐⭐⭐⭐⭐
-                <p>“Exactly what I wanted. Great communication!”</p>
-                <strong>– Rahul</strong>
-            </div>
-        </div>
-
-        <div class="product-box">
-            <div class="product-content">
-                ⭐⭐⭐⭐⭐
-                <p>“Highly recommended for customized gifts.”</p>
-                <strong>– Sneha</strong>
-            </div>
-        </div>
+        <p>
+            📍 <strong>Based in Chalakudy, Thrissur, Kerala</strong><br>
+            🏠 Home-based creative setup<br>
+            🛍️ <strong>Online only</strong> – No physical shop
+        </p>
     </div>
 </div>
 
@@ -340,7 +276,7 @@
     <p>📍 Chalakudy, Thrissur, Kerala</p>
     <p>📞 WhatsApp: +91 97453 75597</p>
     <p>
-        Follow us on Instagram:
+        Instagram:
         <a href="https://www.instagram.com/the_art_cart_by_malu" target="_blank">
             @the_art_cart_by_malu
         </a>
@@ -349,5 +285,3 @@
 
 </body>
 </html>
-
-
