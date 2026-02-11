@@ -1,182 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Art Cart by Malu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Art Cart by Malu</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: #fff4f7;
-            color: #333;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff4f7;
+      color: #333;
+    }
 
-        h1, h2 {
-            font-family: 'Playfair Display', serif;
-            text-align: center;
-        }
+    /* HEADER */
+    header {
+      background: #ff4f7b;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-        /* HEADER */
-        .header {
-            background: #ff4f75;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
 
-        .header h1 {
-            margin-bottom: 8px;
-        }
+    /* SECTION COMMON */
+    section {
+      padding: 70px 20px;
+    }
 
-        .tagline {
-            font-size: 15px;
-            opacity: 0.9;
-        }
+    h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
 
-        /* SECTION */
-        .section {
-            padding: 60px 20px;
-        }
+    /* PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-        /* MEET THE MAKER */
-        .maker-section {
-            max-width: 1100px;
-            margin: auto;
-        }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
 
-        .maker-card {
-            background: white;
-            border-radius: 22px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            padding: 50px;
-        }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
 
-        .maker-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #ff4f7b;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
+    }
 
-        .maker-photo {
-            flex: 0 0 260px;
-            display: flex;
-            justify-content: center;
-        }
+    /* MEET THE MAKER */
+    .maker-box {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    }
 
-        .maker-photo img {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 10px solid #ffe3ec;
-        }
+    .maker-photo img {
+      width: 260px;
+      height: auto;
+      border-radius: 20px;
+      background: #ffe1ea;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
 
-        .maker-text {
-            flex: 1;
-            text-align: left;
-        }
+    .maker-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
 
-        .maker-text h3 {
-            font-size: 26px;
-            margin-bottom: 10px;
-            font-family: 'Playfair Display', serif;
-        }
+    .maker-box p {
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
 
-        .maker-text p {
-            font-size: 15.5px;
-            line-height: 1.9;
-            margin-bottom: 14px;
-        }
-
-        .maker-text strong {
-            color: #ff4f75;
-        }
-
-        /* MOBILE */
-        @media (max-width: 768px) {
-            .maker-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .maker-text {
-                text-align: center;
-            }
-        }
-    </style>
+    /* FOOTER */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <div class="header">
-        <h1>The Art Cart by Malu</h1>
-        <p class="tagline">Customized Gifts Made with Love 💖</p>
+  <!-- HEADER -->
+  <header>
+    <h1>The Art Cart by Malu</h1>
+    <p>Customized Gifts Made with Love 💖</p>
+  </header>
+
+  <!-- PRODUCTS -->
+  <section>
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="card">
+        <img src="birthday1.jpg" alt="Birthday Hamper">
+        <h4>Birthday Hamper</h4>
+        <p>Customization Available</p>
+        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="valentine1.jpg" alt="Valentine Hamper">
+        <h4>Valentine Hamper</h4>
+        <p>Customization Available</p>
+        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="anniversary.jpg" alt="Anniversary Hamper">
+        <h4>Anniversary Hamper</h4>
+        <p>Customization Available</p>
+        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
+      </div>
     </div>
+  </section>
 
-    <!-- MEET THE MAKER -->
-    <div class="section maker-section">
-        <h2>Meet the Maker 🌸</h2>
+  <!-- MEET THE MAKER -->
+  <section>
+    <h2>Meet the Maker 🌸</h2>
+    <div class="maker-box">
+      <div class="maker-photo">
+        <img src="malu.jpg" alt="Amrutha Mohan">
+      </div>
 
-        <div class="maker-card">
-            <div class="maker-content">
+      <h3>Amrutha Mohan (Malu)</h3>
+      <p><strong>Creator of The Art Cart by Malu 💕</strong></p>
 
-                <!-- PHOTO -->
-                <div class="maker-photo">
-                    <!-- 🔁 Change image name if needed -->
-                    <img src="malu.jpg" alt="Amrutha Mohan - Malu">
-                </div>
+      <p>
+        I hold a BTech degree in Computer Science & Engineering and began my professional
+        journey as a Software Tester. Currently, I work in an engineering company near Chalakudy.
+      </p>
 
-                <!-- TEXT -->
-                <div class="maker-text">
-                    <h3>Amrutha Mohan <span style="font-weight:400;">(Malu)</span></h3>
+      <p><strong>Why I started this:</strong></p>
 
-                    <p>
-                        Hi, I’m <strong>Amrutha Mohan</strong>, lovingly known as <strong>Malu</strong> —
-                        the creator behind <strong>The Art Cart by Malu</strong> 💕
-                    </p>
+      <p>
+        I never planned to start this as a business. In May 2023, I designed a baby details
+        photo frame for my own child purely out of love and happiness. I shared it on my WhatsApp
+        status, and friends began asking me to create similar frames.
+      </p>
 
-                    <p>
-                        I hold a <strong>BTech degree in Computer Science & Engineering</strong> and began my
-                        professional journey as a <strong>Software Tester</strong>.
-                        Currently, I work in an <strong>engineering company near Chalakudy</strong>.
-                    </p>
+      <p>
+        I initially said no, but their encouragement made me realize this happiness could be
+        shared. What began with photo frames and polaroids slowly evolved into customized gift
+        hampers for all occasions.
+      </p>
 
-                    <p><strong>Why I started this:</strong></p>
-
-                    <p>
-                        I never planned to start this as a business. In May 2023, I designed a baby details
-                        photo frame for my own child purely out of love and happiness.
-                        I shared it on my WhatsApp status, and to my surprise, friends started asking me
-                        to make similar frames for them.
-                    </p>
-
-                    <p>
-                        I kept saying no at first, but their encouragement made me realize that this small
-                        moment of happiness could mean something special to others.
-                        I started by creating only photo frames and polaroids.
-                    </p>
-
-                    <p>
-                        As trends changed and creativity evolved, my work naturally grew into customized
-                        gift hampers for all occasions — shaping what
-                        <strong>The Art Cart by Malu</strong> is today.
-                    </p>
-
-                    <p>
-                        📍 <strong>Based in Chalakudy, Thrissur, Kerala</strong><br>
-                        🏠 Home-based creative setup<br>
-                        🛍️ <strong>Online only</strong> — No physical shop
-                    </p>
-                </div>
-
-            </div>
-        </div>
+      <p>📍 Based in Chalakudy, Thrissur, Kerala<br>
+         🏠 Home-based creative setup<br>
+         💻 Online only — No physical shop
+      </p>
     </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 The Art Cart by Malu · All rights reserved
+  </footer>
 
 </body>
 </html>
