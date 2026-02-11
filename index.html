@@ -26,8 +26,13 @@
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 36px;
+      font-size: 38px;
       margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 15px;
+      opacity: 0.95;
     }
 
     /* SECTION COMMON */
@@ -38,7 +43,7 @@
     h2 {
       text-align: center;
       font-family: 'Playfair Display', serif;
-      font-size: 28px;
+      font-size: 30px;
       margin-bottom: 40px;
     }
 
@@ -47,16 +52,16 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 25px;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
     }
 
     .card {
       background: white;
       border-radius: 16px;
-      padding: 20px;
+      padding: 18px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
     }
 
     .card img {
@@ -66,9 +71,19 @@
       border-radius: 12px;
     }
 
+    .card h4 {
+      margin: 12px 0 6px;
+      font-weight: 500;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #777;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 12px;
       padding: 10px 18px;
       background: #ff4f7b;
       color: white;
@@ -82,16 +97,16 @@
       max-width: 900px;
       margin: auto;
       background: white;
-      border-radius: 20px;
-      padding: 40px;
+      border-radius: 22px;
+      padding: 45px 30px;
       text-align: center;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.06);
     }
 
     .maker-photo img {
       width: 260px;
       height: auto;
-      border-radius: 20px;
+      border-radius: 18px;
       background: #ffe1ea;
       padding: 10px;
       margin-bottom: 20px;
@@ -100,7 +115,7 @@
     .maker-box h3 {
       font-family: 'Playfair Display', serif;
       font-size: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .maker-box p {
@@ -131,10 +146,19 @@
   <!-- PRODUCTS -->
   <section>
     <h2>Our Products</h2>
+
     <div class="products">
+
       <div class="card">
         <img src="birthday1.jpg" alt="Birthday Hamper">
         <h4>Birthday Hamper</h4>
+        <p>Customization Available</p>
+        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="birthday2.jpg" alt="Premium Birthday Hamper">
+        <h4>Premium Birthday Hamper</h4>
         <p>Customization Available</p>
         <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
       </div>
@@ -147,17 +171,47 @@
       </div>
 
       <div class="card">
+        <img src="valentine2.jpg" alt="Special Valentine Combo">
+        <h4>Special Valentine Combo</h4>
+        <p>Customization Available</p>
+        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
         <img src="anniversary.jpg" alt="Anniversary Hamper">
         <h4>Anniversary Hamper</h4>
         <p>Customization Available</p>
         <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
       </div>
+
+      <div class="card">
+        <img src="engagement.jpg" alt="Engagement Hamper">
+        <h4>Engagement Hamper</h4>
+        <p>Customization Available</p>
+        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="bouquet.jpg" alt="Bouquet">
+        <h4>Bouquet</h4>
+        <p>Customization Available</p>
+        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="chocolate.jpg" alt="Chocolate Hamper">
+        <h4>Chocolate Hamper</h4>
+        <p>Customization Available</p>
+        <a class="btn" href="https://wa.me/919745375597">Order on WhatsApp</a>
+      </div>
+
     </div>
   </section>
 
   <!-- MEET THE MAKER -->
   <section>
     <h2>Meet the Maker 🌸</h2>
+
     <div class="maker-box">
       <div class="maker-photo">
         <img src="malu.jpg" alt="Amrutha Mohan">
@@ -167,27 +221,28 @@
       <p><strong>Creator of The Art Cart by Malu 💕</strong></p>
 
       <p>
-        I hold a BTech degree in Computer Science & Engineering and began my professional
-        journey as a Software Tester. Currently, I work in an engineering company near Chalakudy.
+        I hold a BTech degree in Computer Science & Engineering and began my professional journey
+        as a Software Tester. Currently, I work in an engineering company near Chalakudy.
       </p>
 
       <p><strong>Why I started this:</strong></p>
 
       <p>
-        I never planned to start this as a business. In May 2023, I designed a baby details
-        photo frame for my own child purely out of love and happiness. I shared it on my WhatsApp
-        status, and friends began asking me to create similar frames.
+        I never planned to start this as a business. In May 2023, I designed a baby details photo
+        frame for my own child purely out of love and happiness. I shared it on my WhatsApp status,
+        and friends began asking me to create similar frames.
       </p>
 
       <p>
-        I initially said no, but their encouragement made me realize this happiness could be
-        shared. What began with photo frames and polaroids slowly evolved into customized gift
-        hampers for all occasions.
+        I initially said no, but their encouragement made me realize this happiness could be shared.
+        What started with photo frames and polaroids naturally evolved into customized gift hampers
+        for all occasions.
       </p>
 
-      <p>📍 Based in Chalakudy, Thrissur, Kerala<br>
-         🏠 Home-based creative setup<br>
-         💻 Online only — No physical shop
+      <p>
+        📍 Based in Chalakudy, Thrissur, Kerala<br>
+        🏠 Home-based creative setup<br>
+        💻 Online only — No physical shop
       </p>
     </div>
   </section>
